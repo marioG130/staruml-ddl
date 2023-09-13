@@ -183,6 +183,8 @@ class DDLGenerator {
       codeWriter.writeLine('DROP TABLE IF EXISTS ' + this.getId(elem.name, options) + ';')
     } else if (options.dbms === 'oracle') {
       codeWriter.writeLine('DROP TABLE ' + this.getId(elem.name, options) + ' CASCADE CONSTRAINTS;')
+    } else if (options.dbms === 'sqlite') {
+      codeWriter.writeLine('DROP TABLE IF EXISTS ' + this.getId(elem.name, options) + ';')
     }
   }
 
