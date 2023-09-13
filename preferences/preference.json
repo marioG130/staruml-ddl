@@ -35,6 +35,7 @@
       "options": [
         { "value": "mysql",  "text": "MySQL" },
         { "value": "oracle", "text": "Oracle" }
+        { "value": "sqlite", "text": "SQLite" }
       ],
       "default": "mysql"
     },
